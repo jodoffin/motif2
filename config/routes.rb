@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+ # get 'purposes/index'
+
+ # get 'purposes/show'
+
+  #get 'purposes/new'
+
+ # get 'purposes/edit'
+
+resources :purposes
+
+#  get 'welcome/index'
+
+#  get 'welcome/about'
+get 'about' => 'welcome#about'
+  root to: 'welcome#index'
+
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
